@@ -1,0 +1,24 @@
+#chessboard {
+    width: 480px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.square.light {
+    background-color: #f8f9fa; /* Light square - Bootstrap light color */
+}
+
+.square.dark {
+    background-color: #343a40; /* Dark square - Bootstrap dark color */
+}
